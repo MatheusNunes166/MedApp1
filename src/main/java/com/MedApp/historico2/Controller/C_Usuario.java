@@ -1,7 +1,6 @@
 package com.MedApp.historico2.Controller;
 
 import com.MedApp.historico2.Model.M_Resposta;
-import com.MedApp.historico2.Model.M_Usuario;
 import com.MedApp.historico2.Service.S_Usuario;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpSession;
@@ -87,6 +86,9 @@ public class C_Usuario {
     ) {
         return S_Usuario.updateUsuario(nome, email,CPF, senhaAtual, novaSenha, confSenha, session.getAttribute("usuario"));
     }
+
+
+
 
     @GetMapping("/sobreSite")
     public String getHome(HttpSession session,
