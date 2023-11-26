@@ -8,7 +8,7 @@ public class M_Paciente {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private String doenca;
+    private String doencas;
     private String alergias;
     private String uso_medicamentos;
 
@@ -20,12 +20,12 @@ public class M_Paciente {
         this.id = id;
     }
 
-    public String getDoenca() {
-        return doenca;
+    public String getDoencas() {
+        return doencas;
     }
 
-    public void setDoenca(String doenca) {
-        this.doenca = doenca;
+    public void setDoencas(String doencas) {
+        this.doencas = doencas;
     }
 
     public String getAlergias() {

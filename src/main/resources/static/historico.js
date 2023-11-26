@@ -9,7 +9,7 @@ function salvarHistorico(){
         data:{
             doencas:doencas,
             alergias:alergias,
-            uso_medicamentos:uso_medicamentos
+            uso_medicamentos:uso_medicamentos,
         },
         success: function(data){
             if(data.sucesso){

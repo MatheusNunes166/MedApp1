@@ -17,11 +17,12 @@
             integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.31/dist/sweetalert2.all.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.31/dist/sweetalert2.min.css" rel="stylesheet">
+    <script th:if="${usuario.id_relacao == 2}" src="historico.js"></script>
     <script src="home.js" defer></script>
     <script src="routes.js" ></script>
     <script src ="perfil.js"></script>
     <script src ="calendario.js"></script>
-    <script src="Historico.js"></script>
+    <script src="historico.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <title>home</title>
@@ -197,10 +198,12 @@ box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1), 0 2px 2px 0 rgba(0, 0, 0, 0.10);
             </a>
         </li>
         <li class="has-subnav">
+        <li th:if="${usuario.id_relacao == 2}">
             <a href="/edit/Historico">
                 <i class="fa fa-user fa-2x"></i>
                 <span class="nav-text">Historico do Paciente</span>
             </a>
+    </li>
         </li>
 
     </ul>

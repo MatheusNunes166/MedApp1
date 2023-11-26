@@ -113,12 +113,13 @@ body {
   <div class="forma">
     <div class="perfil-form">
       <p class="text-titulo">Atualizar Historico </p>
-      <input type="number" placeholder="Id" id="id" disabled th:value="${usuario.id}"/>
-      <input type="text" placeholder="Doenças Crônicas" id="text"/>
+      <input type="number" placeholder="Id do Paciente" id="id" disabled th:value="${paciente != null ? paciente.id : ''}"/>
+      <input type="text" placeholder="Doenças Crônicas" id="doencas"/>
       <input type="text" placeholder="Alergias" id="alergias"/>
       <input type="text" class="form-control" id="uso_medicamentos" placeholder="Uso de Medicamentos" required>
       <button class="btn-aceitar" id="atualizar">Atualizar</button>
       <p class="message">voltar para o <a href="/Home">menu inicial</a></p>
     </div>
   </div>
+
 </div>

@@ -21,6 +21,12 @@ function controleRotasGet(url){
                                                                                     });
                                                                                 });
                                                                                 break;
+                        case "/edit/Historico":
+                                                               $.get(url,function(data){
+                                                                   $(".container").html(data);
+                                                                   $("#atualizar").click(salvarHistorico);
+                                                               });
+                                                               break;
         default:
             $.get(url,function(data){
                 $(".container").html(data);
